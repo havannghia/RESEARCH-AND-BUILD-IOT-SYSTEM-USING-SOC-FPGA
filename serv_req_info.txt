@@ -1,0 +1,48 @@
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (7319 megabytes used)</error>
+	<date>Mon Feb 17 17:26:43 2020</date>
+	<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (8062 megabytes used)</error>
+	<date>Wed Feb 19 17:24:45 2020</date>
+	<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (7608 megabytes used)</error>
+	<date>Thu Mar 12 15:02:10 2020</date>
+	<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (6337 megabytes used)</error>
+	<date>Thu Mar 12 16:11:21 2020</date>
+	<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (7524 megabytes used)</error>
+	<date>Thu Mar 12 16:25:22 2020</date>
+	<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_fit.exe</executable>
+	<sub_system>MEM</sub_system>
+	<error>*** Fatal Error: Out of memory in module quartus_fit.exe (7228 megabytes used)</error>
+	<date>Thu Mar 12 18:04:06 2020</date>
+	<version>Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition</version>
+</internal_error>
+

@@ -1,0 +1,259 @@
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:fpga_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|SSP_UART_Avalon:ssp_uart_avalon_0|SSP_UART:uart|UART_RXSM:RCV|RxSM
+Name RxSM.state_bit_3 RxSM.state_bit_2 RxSM.state_bit_1 RxSM.state_bit_0 
+RxSM.pWaitMark 0 0 0 0 
+RxSM.pChkMark 0 0 0 1 
+RxSM.pChkStart 0 0 1 0 
+RxSM.pIdle 0 0 1 1 
+RxSM.pRcvError 0 1 0 0 
+RxSM.pChkParity 0 1 0 1 
+RxSM.pChkStop1 0 1 1 0 
+RxSM.pChkStop2 0 1 1 1 
+RxSM.pShift3 1 0 0 0 
+RxSM.pShift2 1 0 0 1 
+RxSM.pShift0 1 0 1 0 
+RxSM.pShift1 1 0 1 1 
+RxSM.pShift4 1 1 0 0 
+RxSM.pShift5 1 1 0 1 
+RxSM.pShift7 1 1 1 0 
+RxSM.pShift6 1 1 1 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|i2cSlaveTop:i2c_slave_0|i2cSlave:u_i2cSlave|serialInterface:u_serialInterface|CurrState_SISt
+Name CurrState_SISt.1111 CurrState_SISt.1110 CurrState_SISt.1101 CurrState_SISt.1100 CurrState_SISt.1011 CurrState_SISt.1010 CurrState_SISt.1001 CurrState_SISt.1000 CurrState_SISt.0111 CurrState_SISt.0110 CurrState_SISt.0101 CurrState_SISt.0100 CurrState_SISt.0011 CurrState_SISt.0010 CurrState_SISt.0001 CurrState_SISt.0000 
+CurrState_SISt.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+CurrState_SISt.0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+CurrState_SISt.0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+CurrState_SISt.0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+CurrState_SISt.0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+CurrState_SISt.0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+CurrState_SISt.0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+CurrState_SISt.0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+CurrState_SISt.1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+CurrState_SISt.1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+CurrState_SISt.1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|i2cSlaveTop:i2c_slave_0|i2cSlave:u_i2cSlave|serialInterface:u_serialInterface|streamSt
+Name streamSt.11 streamSt.10 streamSt.01 streamSt.00 
+streamSt.00 0 0 0 0 
+streamSt.01 0 0 1 1 
+streamSt.10 0 1 0 1 
+streamSt.11 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|oc_i2c_master:i2c_master_0|i2c_master_top:i2c_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
+c_state.ST_IDLE 0 0 0 0 0 0 
+c_state.ST_START 1 0 0 0 0 1 
+c_state.ST_READ 1 0 0 0 1 0 
+c_state.ST_WRITE 1 0 0 1 0 0 
+c_state.ST_ACK 1 0 1 0 0 0 
+c_state.ST_STOP 1 1 0 0 0 0 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|interrupt_latency_counter:ilc|state_machine_counter:state_machine[2].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|interrupt_latency_counter:ilc|state_machine_counter:state_machine[1].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|interrupt_latency_counter:ilc|state_machine_counter:state_machine[0].state_machine_counter|state
+Name state.STORE state.STOP state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.STOP 0 1 0 1 
+state.STORE 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|altera_edge_detector:pulse_debug_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |DE10_Standard_GHRD|altera_edge_detector:pulse_warm_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |DE10_Standard_GHRD|altera_edge_detector:pulse_cold_reset|state
+Name state.IDLE state.CAPT state.ARM 
+state.IDLE 0 0 0 
+state.ARM 1 0 1 
+state.CAPT 1 1 0 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:mm_bridge_0_s0_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:f2sdram_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:hps_only_master|altera_avalon_packets_to_master:transacto|packets_to_master:p2m|state
+Name state.READ_SEND_WAIT state.READ_SEND_ISSUE state.READ_DATA_WAIT state.READ_CMD_WAIT state.READ_ASSERT state.RETURN_PACKET state.WRITE_WAIT state.GET_WRITE_DATA state.GET_ADDR4 state.GET_ADDR3 state.GET_ADDR2 state.GET_ADDR1 state.GET_SIZE2 state.GET_SIZE1 state.GET_EXTRA state.0000 
+state.0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.GET_EXTRA 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.GET_SIZE1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.GET_SIZE2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.GET_ADDR1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.GET_ADDR2 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.GET_ADDR3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.GET_ADDR4 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.GET_WRITE_DATA 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.WRITE_WAIT 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.RETURN_PACKET 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.READ_ASSERT 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_CMD_WAIT 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_DATA_WAIT 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_ISSUE 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.READ_SEND_WAIT 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_condt_gen:u_condt_gen|start_state
+Name start_state.START_DONE start_state.START_HOLD start_state.START_LOAD start_state.START_IDLE 
+start_state.START_IDLE 0 0 0 0 
+start_state.START_LOAD 0 0 1 1 
+start_state.START_HOLD 0 1 0 1 
+start_state.START_DONE 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_condt_gen:u_condt_gen|restart_state
+Name restart_state.RESTART_DONE restart_state.RESTART_HOLD restart_state.RESTART_SETUP restart_state.RESTART_SCL_LOW restart_state.RESTART_LOAD restart_state.RESTART_IDLE 
+restart_state.RESTART_IDLE 0 0 0 0 0 0 
+restart_state.RESTART_LOAD 0 0 0 0 1 1 
+restart_state.RESTART_SCL_LOW 0 0 0 1 0 1 
+restart_state.RESTART_SETUP 0 0 1 0 0 1 
+restart_state.RESTART_HOLD 0 1 0 0 0 1 
+restart_state.RESTART_DONE 1 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_condt_gen:u_condt_gen|stop_state
+Name stop_state.STOP_SETUP stop_state.STOP_SCL_LOW stop_state.STOP_LOAD stop_state.STOP_IDLE stop_state.STOP_DONE 
+stop_state.STOP_IDLE 0 0 0 0 0 
+stop_state.STOP_LOAD 0 0 1 1 0 
+stop_state.STOP_SCL_LOW 0 1 0 1 0 
+stop_state.STOP_SETUP 1 0 0 1 0 
+stop_state.STOP_DONE 0 0 0 1 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_condt_det:u_condt_det|bus_state
+Name bus_state.BUS_COUNTING bus_state.BUS_LOAD_CNT bus_state.BUS_BUSY bus_state.BUS_IDLE 
+bus_state.BUS_IDLE 0 0 0 0 
+bus_state.BUS_BUSY 0 0 1 1 
+bus_state.BUS_LOAD_CNT 0 1 0 1 
+bus_state.BUS_COUNTING 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_txshifter:u_txshifter|tx_shiftfsm_state
+Name tx_shiftfsm_state.TX_DONE tx_shiftfsm_state.TX_CLK_HOLD tx_shiftfsm_state.TX_CLK_HIGH tx_shiftfsm_state.TX_CLK_LOW tx_shiftfsm_state.TX_CLK_LOAD tx_shiftfsm_state.TX_IDLE 
+tx_shiftfsm_state.TX_IDLE 0 0 0 0 0 0 
+tx_shiftfsm_state.TX_CLK_LOAD 0 0 0 0 1 1 
+tx_shiftfsm_state.TX_CLK_LOW 0 0 0 1 0 1 
+tx_shiftfsm_state.TX_CLK_HIGH 0 0 1 0 0 1 
+tx_shiftfsm_state.TX_CLK_HOLD 0 1 0 0 0 1 
+tx_shiftfsm_state.TX_DONE 1 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_rxshifter:u_rxshifter|rx_shiftfsm_state
+Name rx_shiftfsm_state.RX_DONE rx_shiftfsm_state.RX_HOLD rx_shiftfsm_state.RX_CLK_HIGH rx_shiftfsm_state.RX_CLK_LOW rx_shiftfsm_state.RX_CLK_LOAD rx_shiftfsm_state.IDLE 
+rx_shiftfsm_state.IDLE 0 0 0 0 0 0 
+rx_shiftfsm_state.RX_CLK_LOAD 0 0 0 0 1 1 
+rx_shiftfsm_state.RX_CLK_LOW 0 0 0 1 0 1 
+rx_shiftfsm_state.RX_CLK_HIGH 0 0 1 0 0 1 
+rx_shiftfsm_state.RX_HOLD 0 1 0 0 0 1 
+rx_shiftfsm_state.RX_DONE 1 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|altera_avalon_i2c:i2c_0|altera_avalon_i2c_mstfsm:u_mstfsm|mst_fsm_state
+Name mst_fsm_state.PRE_IDLE mst_fsm_state.GEN_STOP mst_fsm_state.BUS_HOLD mst_fsm_state.GEN_RESTART_7BIT mst_fsm_state.GEN_7BIT_ADDR mst_fsm_state.RX_BYTE mst_fsm_state.TX_BYTE mst_fsm_state.POP_TX_FIFO mst_fsm_state.GEN_START mst_fsm_state.PRE_START mst_fsm_state.IDLE 
+mst_fsm_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+mst_fsm_state.PRE_START 0 0 0 0 0 0 0 0 0 1 1 
+mst_fsm_state.GEN_START 0 0 0 0 0 0 0 0 1 0 1 
+mst_fsm_state.POP_TX_FIFO 0 0 0 0 0 0 0 1 0 0 1 
+mst_fsm_state.TX_BYTE 0 0 0 0 0 0 1 0 0 0 1 
+mst_fsm_state.RX_BYTE 0 0 0 0 0 1 0 0 0 0 1 
+mst_fsm_state.GEN_7BIT_ADDR 0 0 0 0 1 0 0 0 0 0 1 
+mst_fsm_state.GEN_RESTART_7BIT 0 0 0 1 0 0 0 0 0 0 1 
+mst_fsm_state.BUS_HOLD 0 0 1 0 0 0 0 0 0 0 1 
+mst_fsm_state.GEN_STOP 0 1 0 0 0 0 0 0 0 0 1 
+mst_fsm_state.PRE_IDLE 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:f2sdram_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:f2sdram_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:fpga_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:fpga_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:hps_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |DE10_Standard_GHRD|soc_system:u0|soc_system_f2sdram_only_master:hps_only_master|altera_avalon_st_jtag_interface:jtag_phy_embedded_in_jtag_master|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
